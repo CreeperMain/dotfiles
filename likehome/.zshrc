@@ -57,6 +57,9 @@ source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
 ZSH_HIGHLIGHT_STYLES[precommand]=fg=magenta,bold
 ZSH_HIGHLIGHT_STYLES[command]=fg=green,underline
 ZSH_HIGHLIGHT_STYLES[alias]=fg=green,underline
+ZSH_HIGHLIGHT_STYLES[builtin]=fg=cyan
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]=fg=#ff9e64 #orange
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]=fg=#ff9e64 #orange
 ZSH_HIGHLIGHT_STYLES[commandseparator]=fg=magenta,bold
 ZSH_HIGHLIGHT_STYLES[single-hyphen-option]=fg=yellow
 ZSH_HIGHLIGHT_STYLES[double-hyphen-option]=fg=yellow
