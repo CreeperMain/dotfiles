@@ -52,13 +52,16 @@ alias lt="ls -laht --color=always"
 alias lr="ls -lhR --color=always"
 
 source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
-#ova ne chepkaj go 
-: ${ZSH_HIGHLIGHT_STYLES[acme:aurora]:=fg=green}
 
-_zsh_highlight_highlighter_acme_paint() {
-  # Colorize the whole buffer with the 'aurora' style
-  _zsh_highlight_add_highlight 0 $#BUFFER acme:aurora
-}
-#ova go popravat bojata ^^^^^
+#colors 4 syntax
+ZSH_HIGHLIGHT_STYLES[precommand]=fg=magenta,bold
+ZSH_HIGHLIGHT_STYLES[command]=fg=green,underline
+ZSH_HIGHLIGHT_STYLES[alias]=fg=green,underline
+ZSH_HIGHLIGHT_STYLES[commandseparator]=fg=magenta,bold
+ZSH_HIGHLIGHT_STYLES[single-hyphen-option]=fg=yellow
+ZSH_HIGHLIGHT_STYLES[double-hyphen-option]=fg=yellow
+ZSH_HIGHLIGHT_STYLES[path_pathseparator]=fg=magenta,bold
+ZSH_HIGHLIGHT_STYLES[path]=fg=white
+
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[green]%}%n%{$fg[magenta]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%} ψ%b "
