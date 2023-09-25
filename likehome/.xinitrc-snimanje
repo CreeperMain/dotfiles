@@ -5,4 +5,5 @@ gentoo-pipewire-launcher &
 nitrogen --restore
 picom -b &
 $HOME/.config/dwm-config/bar-files/bar.sh &
+exec dbus-launch --exit-with-session dwm
 exec dwm

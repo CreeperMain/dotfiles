@@ -1,6 +1,7 @@
 HISTSIZE=2000 
 SAVEHIST=2000 
 HISTFILE=~/.cache/zsh-history
+export PATH="/opt/bin:$PATH"
 
 #basic out tab completation
 autoload -U compinit promptinit
@@ -47,9 +48,9 @@ bindkey -v '^?' backward-delete-char
 alias yt-dlp-mp4="yt-dlp -f 'bv*[height=1080]+ba' --merge-output-format mp4"
 alias yt-dlp-mp3="yt-dlp -f 'ba' -x --audio-format=mp3"
 alias yt-dlp-ako_javit_greshka_za_res="yt-dlp -f 'bv+ba' --merge-output-format mp4"
-alias ll="ls -lah --color=always"
-alias lt="ls -laht --color=always"
-alias lr="ls -lhR --color=always"
+alias ll="ls -lahF --color=always"
+alias lt="ls -lahtF --color=always"
+alias lr="ls -lhRF --color=always"
 
 source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
 
