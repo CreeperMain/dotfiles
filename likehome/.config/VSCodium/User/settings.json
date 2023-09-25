@@ -1,0 +1,18 @@
+{
+    "window.titleBarStyle": "custom",
+    "editor.lineNumbers": "relative",
+    "workbench.colorTheme": "Tokyo Night",
+    "editor.fontFamily": "JetBrainsMonoNerdFont-Medium.ttf",
+    "window.zoomLevel": 1,
+    "editor.fontSize": 19,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+          }
+    ]
+}
