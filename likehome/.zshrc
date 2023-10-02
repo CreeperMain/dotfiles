@@ -48,6 +48,7 @@ bindkey -v '^?' backward-delete-char
 alias yt-dlp-mp4="yt-dlp -f 'bv*[height=1080]+ba' --merge-output-format mp4"
 alias yt-dlp-mp3="yt-dlp -f 'ba' -x --audio-format=mp3"
 alias yt-dlp-ako_javit_greshka_za_res="yt-dlp -f 'bv+ba' --merge-output-format mp4"
+alias yt-dlp-m="yt-dlp --embed-metadata -f 'ba' -x --audio-format=flac"
 alias ll="ls -lahF --color=always"
 alias lt="ls -lahtF --color=always"
 alias lr="ls -lhRF --color=always"
