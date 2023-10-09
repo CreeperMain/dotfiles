@@ -1,6 +1,6 @@
-xrandr --output eDP --brightness 0.6
+xrandr --output eDP --brightness 0.6 &
 gentoo-pipewire-launcher &
-nitrogen --restore
+nitrogen --random ~/Wallpapers --set-zoom-fill &
 picom -b &
 export QT_QPA_PLATFORMTHEME=gtk2 #make sure qtstyleplugins is installed
 $HOME/.config/dwm-config/bar-files/bar.sh &
