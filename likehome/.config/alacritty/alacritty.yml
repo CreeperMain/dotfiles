@@ -1,3 +1,6 @@
+# tmux fix
+env:
+  TERM: xterm-256color
 
 font:
   normal:

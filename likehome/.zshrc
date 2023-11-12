@@ -2,6 +2,7 @@ HISTSIZE=2000
 SAVEHIST=2000 
 HISTFILE=~/.cache/zsh-history
 export PATH="/opt/bin:$PATH"
+export LESSHISTFILE="$XDG_STATE_HOME"
 
 #basic out tab completation
 autoload -U compinit promptinit
@@ -52,6 +53,16 @@ alias yt-dlp-m="yt-dlp --embed-metadata -f 'ba' -x --audio-format=flac"
 alias ll="ls -lahF --color=always"
 alias lt="ls -lahtF --color=always"
 alias lr="ls -lhRF --color=always"
+alias netstat-num="netstat -atu -epo --numeric-hosts --numeric-ports"
+alias netstat-char="netstat -atu -epoW"
+alias last-im="last -adixw"
+alias ff="nvim \$(find | fzf)"
+alias ffp="zathura \$(find -name '*.pdf' | fzf)"
+alias ffd="cd \$(find -type d | fzf) && nvim ."
+#make a fzf one for opening directories
+#make an fzf one for opening proframming related 
+#https://youtu.be/vt33Hp-4RXg?si=NQw6ISmpSQC6FwVt
+# dev workflow configure NVIM
 
 source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
 
