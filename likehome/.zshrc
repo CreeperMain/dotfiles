@@ -59,10 +59,23 @@ alias last-im="last -adixw"
 alias ff="nvim \$(find | fzf)"
 alias ffp="zathura \$(find -name '*.pdf' | fzf)"
 alias ffd="cd \$(find -type d | fzf) && nvim ."
+
+alias normal-mode="doas -u martin cp /home/martin/.dotfiles/likehome/.xinitrc-normalno /home/martin/.dotfiles/likehome/.xinitrc; doas -u root rm -rf /etc/X11/xorg.conf; doas -u root killall X; doas -u martin startx"
+# the above command puts you into normal mode, i.e. the igpu draws the screen and the dgpu can be used with prime-run command or in other ways
+alias recording-mode="doas -u martin cp /home/martin/.dotfiles/likehome/.xinitrc-snimanje /home/martin/.dotfiles/likehome/.xinitrc; doas -u root nvidia-xconfig --prime; doas -u root killall X; doas -u martin startx"
+# the above command puts you into recording mode where the screen is drawn by the dgpu
+alias update-nvidia-patch="doas -u martin git clone https://github.com/keylase/nvidia-patch; cd nvidia-patch; su -c 'bash ./patch.sh && bash ./patch-fbc.sh && bash ./patch.sh -f && bash ./patch-fbc.sh -f'; cd .. ; rm -rf nvidia-patch"
+# the above command installs a patch that enables NVENC and NvFBC for nvidia gpus automatically, must be run when the nvidia drivers are updated
+
 #make a fzf one for opening directories
 #make an fzf one for opening proframming related 
 #https://youtu.be/vt33Hp-4RXg?si=NQw6ISmpSQC6FwVt
 # dev workflow configure NVIM
+
+#shell functions
+cg++() { 
+    g++ -o "${1%.*}" "$1" -lncurses; 
+}
 
 source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
 
