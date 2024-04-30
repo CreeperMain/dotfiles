@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Arc-Zenburn
+Comment=The Arc theme remade Zenburn style
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Arc-Zenburn
+MetacityTheme=Arc-Zenburn
+IconTheme=gnome
+CursorTheme=DMZ-Black
+ButtonLayout=menu:minimize,maximize,close

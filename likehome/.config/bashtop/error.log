@@ -1,0 +1,437 @@
+ 
+New instance of bashtop version: 0.9.25 Pid: 2144
+ 
+New instance of bashtop version: 0.9.25 Pid: 30183
+ 
+New instance of bashtop version: 0.9.25 Pid: 7799
+ 
+New instance of bashtop version: 0.9.25 Pid: 8587
+ 
+New instance of bashtop version: 0.9.25 Pid: 31453
+ 
+New instance of bashtop version: 0.9.25 Pid: 3905
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+11:19:21 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 7463
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+11:58:08 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 13427
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+12:28:51 AM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 22553
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+09:52:48 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 1815
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+09:29:24 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 613
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+10:05:15 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 26684
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+10:58:03 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 2675
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+11:00:35 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 4080
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+11:01:05 PM ERROR: On line 1048 
+/usr/bin/bashtop: line 595: echo: write error: Broken pipe
+/usr/bin/bashtop: line 597: echo: write error: Broken pipe
+ 
+New instance of bashtop version: 0.9.25 Pid: 18499
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+12:48:18 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 17824
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+06:48:08 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 19135
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+06:48:43 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 22167
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+06:49:59 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 26871
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+01:04:19 AM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 31334
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+03:53:15 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 21485
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+04:35:36 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 15353
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+06:05:55 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 20006
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+11:03:12 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 18984
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+03:51:14 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 9458
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+11:23:10 AM ERROR: On line 1048 
+/usr/bin/bashtop: line 633: echo: write error: Input/output error
+ 
+New instance of bashtop version: 0.9.25 Pid: 9338
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+12:44:19 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 15015
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+02:59:38 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 6002
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+09:10:58 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 7735
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+08:12:24 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 14810
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+10:08:24 PM ERROR: On line 1048 
+/usr/bin/bashtop: line 1334: ((: Pid: Program:       Arguments:                   Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ": Program:       Arguments:                   Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1334: ((: Pid: Program:       Arguments:                   Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ": Program:       Arguments:                   Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1465: ((: /usr/lib64/librewolf/librewolf: syntax error: operand expected (error token is "/usr/lib64/librewolf/librewolf")
+/usr/bin/bashtop: line 1466: ((: /usr/lib64/librewolf/librewolf: syntax error: operand expected (error token is "/usr/lib64/librewolf/librewolf")
+/usr/bin/bashtop: line 1468: /: syntax error: operand expected (error token is "/")
+ 
+New instance of bashtop version: 0.9.25 Pid: 23106
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+10:09:37 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 25404
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+05:44:38 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 4568
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+07:50:54 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 8360
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+07:51:44 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 6069
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+09:38:31 PM ERROR: On line 1048 
+PSUTIL ERROR! Command: get_net('wlan0')
+'wlan0'
+09:39:45 PM ERROR: On line 4634 
+ 
+New instance of bashtop version: 0.9.25 Pid: 13460
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+06:45:46 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 25635
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+07:06:40 PM ERROR: On line 1048 
+/usr/bin/bashtop: line 626: echo: write error: Input/output error
+ 
+New instance of bashtop version: 0.9.25 Pid: 4532
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+04:20:48 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 3617
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+04:50:42 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 16391
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+07:58:55 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 19011
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+07:59:29 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 23994
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+08:00:47 PM ERROR: On line 1048 
+/usr/bin/bashtop: line 626: echo: write error: Input/output error
+/usr/bin/bashtop: line 627: echo: write error: Input/output error
+ 
+New instance of bashtop version: 0.9.25 Pid: 28797
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+09:15:27 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 14760
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+12:24:42 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 6084
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+10:54:31 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 11004
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+11:10:54 AM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 3684
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+03:08:24 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 25905
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+03:13:34 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 5289
+09:00:44 PM ERROR: On line 680 
+/usr/bin/bashtop: line 4806: ${pycoproc[1]}: ambiguous redirect
+ 
+New instance of bashtop version: 0.9.25 Pid: 20835
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+09:32:53 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 24757
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+10:14:26 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 6442
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+10:31:22 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 8932
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+10:31:51 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 6835
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+10:50:06 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 14165
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+11:07:47 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 31230
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+09:41:23 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 20965
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+10:17:29 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 2716
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+10:20:35 PM ERROR: On line 1048 
+/usr/bin/bashtop: line 633: echo: write error: Input/output error
+ 
+New instance of bashtop version: 0.9.25 Pid: 12996
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+09:32:48 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 16345
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+11:24:37 PM ERROR: On line 1048 
+/usr/bin/bashtop: line 4353: warning: command substitution: ignored null byte in input
+ 
+New instance of bashtop version: 0.9.25 Pid: 10521
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+12:17:39 AM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 8186
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+05:39:00 PM ERROR: On line 1048 
+PSUTIL ERROR! Command: get_proc(sorting='memory', tree=Tree, prog_len=15, arg_len=31, search='', reverse=False, proc_per_cpu=False)
+name 'Tree' is not defined
+PSUTIL ERROR! Command: get_proc(sorting='memory', tree=Tree, prog_len=15, arg_len=31, search='', reverse=False, proc_per_cpu=False)
+name 'Tree' is not defined
+PSUTIL ERROR! Command: get_proc(sorting='memory', tree=Tree, prog_len=15, arg_len=31, search='', reverse=False, proc_per_cpu=False)
+name 'Tree' is not defined
+PSUTIL ERROR! Command: get_proc(sorting='memory', tree=Tree, prog_len=15, arg_len=31, search='', reverse=False, proc_per_cpu=False)
+name 'Tree' is not defined
+PSUTIL ERROR! Command: get_proc(sorting='memory', tree=Tree, prog_len=15, arg_len=31, search='', reverse=False, proc_per_cpu=False)
+name 'Tree' is not defined
+PSUTIL ERROR! Command: get_proc(sorting='memory', tree=Tree, prog_len=15, arg_len=31, search='', reverse=False, proc_per_cpu=False)
+name 'Tree' is not defined
+PSUTIL ERROR! Command: get_proc(sorting='memory', tree=Tree, prog_len=15, arg_len=31, search='', reverse=False, proc_per_cpu=False)
+name 'Tree' is not defined
+PSUTIL ERROR! Command: get_proc(sorting='memory', tree=Tree, prog_len=15, arg_len=31, search='', reverse=False, proc_per_cpu=False)
+name 'Tree' is not defined
+PSUTIL ERROR! Command: get_proc(sorting='memory', tree=Tree, prog_len=15, arg_len=31, search='', reverse=False, proc_per_cpu=False)
+name 'Tree' is not defined
+PSUTIL ERROR! Command: get_proc(sorting='memory', tree=Tree, prog_len=15, arg_len=31, search='', reverse=False, proc_per_cpu=False)
+name 'Tree' is not defined
+PSUTIL ERROR! Command: get_proc(sorting='memory', tree=Tree, prog_len=15, arg_len=31, search='', reverse=False, proc_per_cpu=False)
+name 'Tree' is not defined
+ 
+New instance of bashtop version: 0.9.25 Pid: 9100
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+05:39:12 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 9627
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+05:39:17 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 27910
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+05:58:53 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 1175
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+06:00:19 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 26975
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+06:20:31 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 12417
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+06:24:20 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 13694
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+06:24:35 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 17037
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+07:00:11 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 3337
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+07:21:58 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 15441
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+07:35:49 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 6686
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+10:23:22 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 16470
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+10:25:48 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 13833
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+12:01:01 AM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 28709
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+12:12:39 AM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 10046
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+05:56:09 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 28827
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+06:20:53 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 17016
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+07:24:41 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 6468
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+09:32:52 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 8051
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+09:33:12 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 20822
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+09:47:00 PM ERROR: On line 1048 
+ 
+New instance of bashtop version: 0.9.25 Pid: 27441
+PSUTIL ERROR! Command: get_nics()
+'enp3s0'
+09:49:03 PM ERROR: On line 1048 

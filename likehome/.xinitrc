@@ -1,4 +1,4 @@
-xrandr --output eDP --brightness 0.6 &
+xrandr --output eDP --brightness 0.4 &
 gentoo-pipewire-launcher &
 nitrogen --random ~/Wallpapers --set-zoom-fill &
 picom -b &
