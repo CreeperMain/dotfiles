@@ -16,10 +16,6 @@ font:
     family: Agave Nerd Font  #JetBrainsMono Nerd Font
     style: Bold Italic
   size: 12
-window:
-  padding:
-      x: 0
-      y: 0
 # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
   # increasing `y` moves the glyph upwards.
@@ -27,32 +23,35 @@ window:
   # y: -1
   # x: 0 
 
-# Colors (Zenburn)
-# Orginally designed by jnurmine for vim.
+# TokyoNight Alacritty Colors
 colors:
   # Default colors
   primary:
-    background: '0x3A3A3A'
-    foreground: '0xDCDCCC'
+    background: '0x1a1b26'
+    foreground: '0xc0caf5'
 
   # Normal colors
   normal:
-    black:   '0x1E2320'
-    red:     '0xD78787'
-    green:   '0x60B48A'
-    yellow:  '0xDFAF8F'
-    blue:    '0x506070'
-    magenta: '0xDC8CC3'
-    cyan:    '0x8CD0D3'
-    white:   '0xDCDCCC'
+    black:   '0x15161e'
+    red:     '0xf7768e'
+    green:   '0x9ece6a'
+    yellow:  '0xe0af68'
+    blue:    '0x7aa2f7'
+    magenta: '0xbb9af7'
+    cyan:    '0x7dcfff'
+    white:   '0xa9b1d6'
 
   # Bright colors
   bright:
-    black:   '0x709080'
-    red:     '0xDCA3A3'
-    green:   '0xC3BF9F'
-    yellow:  '0xF0DFAF'
-    blue:    '0x94BFF3'
-    magenta: '0xEC93D3'
-    cyan:    '0x93E0E3'
-    white:   '0xFFFFFF'
+    black:   '0x414868'
+    red:     '0xf7768e'
+    green:   '0x9ece6a'
+    yellow:  '0xe0af68'
+    blue:    '0x7aa2f7'
+    magenta: '0xbb9af7'
+    cyan:    '0x7dcfff'
+    white:   '0xc0caf5'
+
+  indexed_colors:
+    - { index: 16, color: '0xff9e64' }
+    - { index: 17, color: '0xdb4b4b' }

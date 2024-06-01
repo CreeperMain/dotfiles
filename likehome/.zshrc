@@ -48,21 +48,20 @@ bindkey -v '^?' backward-delete-char
 alias yt-dlp-mp4="yt-dlp -f 'bv*[height=1080]+ba' --merge-output-format mp4"
 alias yt-dlp-archive="yt-dlp -f 'bv*[height=480]+ba' --merge-output-format mp4"
 alias yt-dlp-mp3="yt-dlp -f 'ba' -x --audio-format=mp3"
-alias yt-dlp-ako_javit_greshka_za_res="yt-dlp -f 'bv+ba' --merge-output-format mp4"
-alias yt-dlp-m="yt-dlp --embed-metadata -f 'ba' -x --audio-format=flac"
-alias ll="ls -lahF --color=always"
-alias lt="ls -lahtF --color=always"
-alias lr="ls -lhRF --color=always"
-alias lm="ls -laShF --color=always"
+alias yt-dlp-greshka="yt-dlp -f 'bv+ba' --merge-output-format mp4"
+alias yt-dlp-music="yt-dlp --embed-metadata -f 'ba' -x --audio-format=flac"
+alias ll="eza -lahF"
+alias lt="eza -lahF -snew --reverse"
+alias lr="eza -lhTF"
+alias lm="eza -lahF --sort=size --reverse"
 alias netstat-num="netstat -atu -epo --numeric-hosts --numeric-ports"
 alias netstat-char="netstat -atu -epoW"
 alias netstat-lis="netstat -tunlp"
 alias last-im="last -adixw"
 alias audacity-netless="firejail --noprofile --net=none audacity"
-alias nightlight="xrandr --output eDP --brightness 0.3 && gammastep -l 90:90 -t 5700:2800"
+alias nightlight="xrandr --output eDP --brightness 0.3 && gammastep -l 90:90 -t 3500:3500"
 alias vim="nvim"
-#alias vmon="doas rc-service libvirtd start && /usr/libexec/virtiofsd --shared-dir "~/SharedFSwithVM" --socket-path "sharedfs" --cache auto"
-#the second command with virtiofsd is not needed
+alias neofetch="fastfetch"
 
 alias normal-mode="doas -u martin cp /home/martin/.dotfiles/likehome/.xinitrc-normalno /home/martin/.dotfiles/likehome/.xinitrc; doas -u root rm -rf /etc/X11/xorg.conf; doas -u martin 'killall X && startx'"
 # the above command puts you into normal mode, i.e. the igpu draws the screen and the dgpu can be used with prime-run command or in other ways
@@ -100,6 +99,27 @@ ffd() { # find directories it uses fzf
     find "$dir" -type d | fzf-tmux -p --reverse --border=rounded --preview 'tree -C {}' | xargs nvim
 }
 
+countdown() {
+    start="$(( $(date +%s) + $1))"
+    while [ "$start" -ge $(date +%s) ]; do
+        ## Is this more than 24h away?
+        days="$(($(($(( $start - $(date +%s) )) * 1 )) / 86400))"
+        time="$(( $start - `date +%s` ))"
+        printf '%s day(s) and %s\r' "$days" "$(date -u -d "@$time" +%H:%M:%S)"
+        sleep 0.1
+    done
+}
+
+stopwatch() {
+    start=$(date +%s)
+    while true; do
+        days="$(($(( $(date +%s) - $start )) / 86400))"
+        time="$(( $(date +%s) - $start ))"
+        printf '%s day(s) and %s\r' "$days" "$(date -u -d "@$time" +%H:%M:%S)"
+        sleep 0.1
+    done
+}
+
 source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh #dont touch
 
 #colors 4 syntax
@@ -116,6 +136,6 @@ ZSH_HIGHLIGHT_STYLES[path_pathseparator]=fg=magenta,bold
 ZSH_HIGHLIGHT_STYLES[path]=fg=white
 
 autoload -U colors && colors
-PS1="%B%{$fg[red]%}[%{$fg[green]%}%n%{$fg[magenta]%}@%{$fg[cyan]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%} ψ%b "
+PS1="%B%{$fg[red]%}[%{$fg[green]%}%n%{$fg[magenta]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%} ψ%b "
 
 . /usr/share/zsh/site-functions/zsh-autosuggestions.zsh
