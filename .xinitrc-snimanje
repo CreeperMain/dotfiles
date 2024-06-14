@@ -1,0 +1,9 @@
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+xrandr --output eDP-1-0 --brightness 0.6
+gentoo-pipewire-launcher &
+nitrogen --restore
+picom -b &
+$HOME/.config/dwm-config/bar-files/bar.sh &
+exec dbus-launch --exit-with-session dwm
+exec dwm
