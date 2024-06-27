@@ -1,18 +1,49 @@
-HISTSIZE=2000 
-SAVEHIST=2000 
-HISTFILE=~/.cache/zsh-history
-export PATH="/opt/bin:$PATH"
-export LESSHISTFILE="$XDG_STATE_HOME/.cache/"
+#package manager
+# Set the directory we want to store zinit and plugins
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
-#basic out tab completation
-autoload -U compinit promptinit
-promptinit; prompt gentoo
+# Download Zinit, if it's not there yet
+if [ ! -d "$ZINIT_HOME" ]; then
+   mkdir -p "$(dirname $ZINIT_HOME)"
+   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
+
+# Source zinit
+source "${ZINIT_HOME}/zinit.zsh"
+
+# zsh plugins
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+
+# Load completions
+autoload -Uz compinit && compinit
+zinit cdreplay -q
 zstyle ':completion::complete:*' menu select use-cache 1
 zmodload zsh/complist
-compinit
-_comp_options+=(globdots) #includes dotfiles
+_comp_options+=(globdots) #includes dotfiles in completion
 
-#vi mode!!!
+#keybindings
+bindkey '^y' autosuggest-accept
+bindkey '^k' history-search-backward
+bindkey '^j' history-search-forward
+#bindkey '^s'
+
+#history
+HISTSIZE=5000 
+SAVEHIST=5000 
+HISTFILE=~/.cache/zsh-history
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
+export LESSHISTFILE="$XDG_STATE_HOME/.cache/"
+
+#VI MODE!!!
 bindkey -v
 export KEYTIMEOUT=1
 
@@ -46,30 +77,23 @@ bindkey -v '^?' backward-delete-char
 
 #aliases here
 alias yt-dlp-mp4="yt-dlp -f 'bv*[height=1080]+ba' --merge-output-format mp4"
-alias yt-dlp-archive="yt-dlp -f 'bv*[height=480]+ba' --merge-output-format mp4"
+alias yt-dlp-archive="yt-dlp -f 'bv*[height=720]+ba' --merge-output-format mp4"
 alias yt-dlp-mp3="yt-dlp -f 'ba' -x --audio-format=mp3"
 alias yt-dlp-greshka="yt-dlp -f 'bv+ba' --merge-output-format mp4"
 alias yt-dlp-music="yt-dlp --embed-metadata -f 'ba' -x --audio-format=flac"
 alias ll="eza -lahF --sort=type"
 alias lt="eza -lahF -snew --reverse"
-alias lr="eza -lhTF"
+alias lr="eza -lhTF --sort=type"
 alias lm="eza -lahF --sort=size --reverse"
-alias netstat-num="netstat -atu -epo --numeric-hosts --numeric-ports"
-alias netstat-char="netstat -atu -epoW"
-alias netstat-lis="netstat -tunlp"
 alias last-im="last -adixw"
-alias audacity-netless="firejail --noprofile --net=none audacity"
 alias nightlight="xrandr --output eDP --brightness 0.3 && gammastep -l 90:90 -t 3500:3500"
 alias vim="nvim"
 alias neofetch="fastfetch"
-alias turnoff="sleep 1 && xset dpms force off"
+alias ollama="doas rc-service docker start && sleep 2 && docker start ollama && sleep 2 && docker exec -it ollama sh"
+alias ollaoff="docker stop ollama && doas rc-service docker stop"
 
-alias normal-mode="doas -u martin cp /home/martin/.dotfiles/likehome/.xinitrc-normalno /home/martin/.dotfiles/likehome/.xinitrc; doas -u root rm -rf /etc/X11/xorg.conf; doas -u martin 'killall X && startx'"
-# the above command puts you into normal mode, i.e. the igpu draws the screen and the dgpu can be used with prime-run command or in other ways
-alias recording-mode="doas -u martin cp /home/martin/.dotfiles/likehome/.xinitrc-snimanje /home/martin/.dotfiles/likehome/.xinitrc; doas -u root nvidia-xconfig --prime; doas -u root killall X; doas -u martin startx"
-# the above command puts you into recording mode where the screen is drawn by the dgpu
-alias update-nvidia-patch="doas -u martin git clone https://github.com/keylase/nvidia-patch; cd nvidia-patch; su -c 'bash ./patch.sh && bash ./patch-fbc.sh && bash ./patch.sh -f && bash ./patch-fbc.sh -f'; cd .. ; rm -rf nvidia-patch"
-# the above command installs a patch that enables NVENC and NvFBC for nvidia gpus automatically, must be run when the nvidia drivers are updated
+# snippets
+#zinit snippet OMZP::sudo
 
 #shell functions
 comp-g++() { 
@@ -121,8 +145,6 @@ stopwatch() {
     done
 }
 
-source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh #dont touch
-
 #colors 4 syntax
 ZSH_HIGHLIGHT_STYLES[precommand]=fg=magenta,bold
 ZSH_HIGHLIGHT_STYLES[command]=fg=green,underline
@@ -136,7 +158,9 @@ ZSH_HIGHLIGHT_STYLES[double-hyphen-option]=fg=yellow
 ZSH_HIGHLIGHT_STYLES[path_pathseparator]=fg=magenta,bold
 ZSH_HIGHLIGHT_STYLES[path]=fg=white
 
+# Shell integrations
+eval "$(fzf --zsh)" # ctrl r to pull it up rebind it somehow
+eval "$(zoxide init --cmd cd zsh)"
+
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[green]%}%n%{$fg[magenta]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%} ψ%b "
-
-#. /usr/share/zsh/site-functions/zsh-autosuggestions.zsh
